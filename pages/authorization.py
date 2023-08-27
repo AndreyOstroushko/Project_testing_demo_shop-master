@@ -22,7 +22,7 @@ class AuthorizationPage(Base):
     login_button = '//input[@class="button-1 login-button"]'
 
 
-    '''Get wait authorization button'''
+    '''Get waiting authorization button'''
     def get_authorization_button(self):
         return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.button_authorization)))
 
