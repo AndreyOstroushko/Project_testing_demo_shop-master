@@ -27,7 +27,7 @@ class MainPage(AuthorizationPage):
         self.get_search_field().send_keys('computer')
         self.get_search_field().send_keys(Keys.RETURN)
 
-    '''Method'''
+    '''Methods'''
     def search_computers(self):
         self.input_search_word()
         self.assert_word(self.get_result_search(), 'Search')
